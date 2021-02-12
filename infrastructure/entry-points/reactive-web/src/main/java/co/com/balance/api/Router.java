@@ -15,7 +15,8 @@ public class Router {
 
 @Bean
 public RouterFunction<ServerResponse> routerFunction(Handler handler) {
-    return route(GET("/api/usecase/path"), handler::getBalanceAccount);
+    return route(GET("/api/usecase/balance"), handler::getBalance)
+            .andRoute(GET("/api/usecase/movements"),handler::getMovements);
 
         }
     }

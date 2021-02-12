@@ -4,5 +4,5 @@ import reactor.core.publisher.Mono;
 
 public interface BalanceGateway {
 
-    Mono<Balance> getBalanceAccount();
+    Mono<Balance> getBalance();
 }

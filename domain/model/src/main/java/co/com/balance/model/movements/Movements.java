@@ -1,4 +1,7 @@
-package co.com.balance.model.account;
+package co.com.balance.model.movements;
+
+import java.util.List;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -8,7 +11,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder(toBuilder = true)
-public class Account {
-
-    private String arg;
+public class Movements {
+    private List<Movement> transaction;
 }
